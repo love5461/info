@@ -1,0 +1,29 @@
+Ubuntu中 invalid operation updata问题
+sudo apt-get updata和sudo apt-get update
+
+updata 和 update
+
+  最近装了一个Ubuntu 18.4的系统，在下载Vim的时候遇到了一些问题，刚开始错误原因是没有更新APT的源
+
+
+
+更新APT源的命令
+
+sudo apt-get update
+sudo apt-get upgrade
+这个是我输入的
+
+
+
+又找到了invalid operation updata 错误的解决办法，将sudo apt-get updata换为sudo apt update && sudo apt full-upgrade，成功后再用sudo apt-get updata。
+
+
+
+输入这个命令后就可以了。
+
+
+
+ 成功下载了vim
+————————————————
+版权声明：本文为CSDN博主「Li  WanLiang」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_48458789/article/details/123330164
